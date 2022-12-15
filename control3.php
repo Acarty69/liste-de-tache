@@ -243,6 +243,7 @@ session_start();
         <title>Document</title>
     </head>
     <body>
+        <h1>MET TES TACHE EN LIGNE EN TOUTE SECURITE</h1>
         <form method="post">
             <input class="texte" type="text" name="titre" placeholder="Titre">
             <br>
