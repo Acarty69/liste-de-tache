@@ -236,6 +236,7 @@ session_start();
             <input type="textarea" name="tache" placeholder="Tache">
             <br>
             <input type="text" placeholder="Finis ? oui ou non" name="fini">
+            <br>
             <input type="text" placeholder="Pour quand dois-tu la finir (format jj-mm-aaaa)" name="date">
             <p>Que souhaite-tu faire</p>
             <input class="submit" type="submit" value="Mettre en ligne ma tache">
