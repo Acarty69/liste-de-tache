@@ -202,7 +202,7 @@ session_start();
     
    
 
-    var_dump($_SESSION['tache']);
+    
     
     // $test=file_get_contents('tache.txt');
     // echo $test;
@@ -220,7 +220,7 @@ session_start();
      {
          foreach ($_SESSION['tache'] as $key => $value) {
 
-            if($key == $_POST['enfin'])
+            if($_POST['ok'] == $key)
              {
                  echo "tu as finis la tache ".$_POST['enfin']. " bien joué elle est visible dans tes tache finis";
                  file_put_contents('tachefini.txt', "<br>Titre de la tache fini :". $key . "\n<br>" . "Tache fini : " . $value . "\n<br>" ,FILE_APPEND);
@@ -228,7 +228,7 @@ session_start();
             }
          }
      }
-    
+   
 ?>
 
 
@@ -258,7 +258,7 @@ session_start();
             <input class="submit" type="submit" name="suprr" value="supprime une tache au hasard">
             <input class="submit" type="submit" name="affiche" value="Afficher mes taches">
             <br>
-            <input class="texte" type="text" placeholder="le titre de ta tache finis">
+            <input class="texte" type="text" placeholder="le titre de ta tache finis" name="ok">
             <br>
             <input class="submit" type="submit" value="j'ai enfin finis cet tache" name="enfin">
             
