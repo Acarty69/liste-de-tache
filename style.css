@@ -1,0 +1,23 @@
+.test{
+    background-color: yellow;
+    display: flex;
+    color: black;
+    width: 700px;
+    margin-bottom: 10px;
+}
+.padding
+{
+    margin-left: 20px;
+}
+
+.submit
+{
+    background-color: black;
+    
+    border-radius: 10pxs;
+    color: white;
+}
+.texte{
+    background-color: grey;
+    width: 50px;
+}
