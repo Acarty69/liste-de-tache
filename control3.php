@@ -215,6 +215,17 @@ session_start();
     //     {
     //     $_SESSION['time']=[];
     //     }
+
+    // if(isset($_POST['enfin']))
+    // {
+    //     foreach ($_SESSION['tache'] as $key => $value) {
+    //         if($key==$_POST['enfin'])
+    //         {
+    //             echo "tu as finis la tache ".$_POST['enfin']. " bien joué elle est visible dans tes tache finis";
+    //             file_put_contents('tachefini.txt', "<br>Titre de la tache fini :". $key . "\n<br>" . "Tache fini : " . $value . "\n<br>" ,FILE_APPEND);
+    //         }
+    //     }
+    // }
     
 ?>
 
@@ -231,13 +242,13 @@ session_start();
     </head>
     <body>
         <form method="post">
-            <input type="text" name="titre" placeholder="Titre">
+            <input class="texte" type="text" name="titre" placeholder="Titre">
             <br>
-            <input type="textarea" name="tache" placeholder="Tache">
+            <input class="texte" type="textarea" name="tache" placeholder="Tache">
             <br>
-            <input type="text" placeholder="Finis ? oui ou non" name="fini">
+            <input class="texte" type="text" placeholder="Finis ? oui ou non" name="fini">
             <br>
-            <input type="text" placeholder="Pour quand dois-tu la finir (format jj-mm-aaaa)" name="date">
+            <input class="texte" type="text" placeholder="Pour quand dois-tu la finir (format jj-mm-aaaa)" name="date">
             <p>Que souhaite-tu faire</p>
             <input class="submit" type="submit" value="Mettre en ligne ma tache">
 
@@ -248,6 +259,11 @@ session_start();
             
 
         </form>
+
+        <!-- <form method="post">
+            <input type="text" placeholder="le titre de ta tache finis">
+            <input type="submit" value="j'ai enfin finis cet tache" name="enfin">
+        </form> -->
     </body>
     </html>
     
